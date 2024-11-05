@@ -1,0 +1,18 @@
+    int n = arr.size();
+        reverse(arr,0,d-1);
+        reverse(arr,d,n-1);
+        reverse(arr,0,n);
+        
+        return arr;
+        
+
+    }
+    public static void reverse (List<Integer> arr,int low,int high){
+        int a = low;
+        int b = high;
+        while(a<=b){
+            int temp = arr.get(a);
+            arr.get(a) = arr.get(b);
+            arr.get(b) = temp;
+            a++;
+            b--;
